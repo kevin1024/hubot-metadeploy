@@ -1,0 +1,9 @@
+{
+  "rg2": {
+    "provider": "heroku",
+    "heroku_name": "rg2-app",
+    "environments": ["production"],
+    "repository": "MyOrg/rg2",
+    "auto_merge": false
+  }
+}

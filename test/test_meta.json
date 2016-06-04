@@ -1,0 +1,9 @@
+{
+  "web": {
+    "production": [
+      {"name": "rg2-rackspace", "environment": "production"},
+      {"name": "rg2-aws", "environment": "production"},
+      {"name": "rg2-emailupdates", "environment": "rg2-emailupdates-prod"}
+    ]
+  }
+}
