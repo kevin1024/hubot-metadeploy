@@ -1,4 +1,4 @@
-#hubot-metadeploy
+#hubot-metadeploy [![Build Status](https://travis-ci.org/kevin1024/hubot-metadeploy.svg?branch=master)](https://travis-ci.org/kevin1024/hubot-metadeploy)
 
 Integrates with [hubot-deploy](https://github.com/atmos/hubot-deploy) to allow you to deploy multiple apps with one command
 
