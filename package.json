@@ -1,6 +1,6 @@
 {
   "name": "hubot-metadeploy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Kevin McCarthy <me@kevinmccarthy.org>",
   "description": "Trigger multiple hubot deploys with one command",
   "main": "index.coffee",

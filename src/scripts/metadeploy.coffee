@@ -5,6 +5,9 @@
 #   hubot metadeploy <app-group>
 
 MetaDeployment = require "../api/metadeployment"
+Verifiers     = require('hubot-deploy/src/models/verifiers')
+
+TokenForBrain = Verifiers.VaultKey
 
 module.exports = (robot) ->
   robot.respond /mdeploy (.+?)(?: to (.+))?$/i, (msg) ->
@@ -15,6 +18,11 @@ module.exports = (robot) ->
     unless metadeployment.isValid()
       msg.reply "Sorry, environment #{env} isn't defined for #{name}"
       return
+
+    metadeployment.user   = msg.message.user.name
+    metadeployment.room   = msg.message.user.room
+    metadeployment.userName  = msg.message.user.name
+    metadeployment.robotName = robot.name
 
     metadeployment.post (err, status, body, headers, responseMessage) ->
       msg.reply responseMessage if responseMessage?

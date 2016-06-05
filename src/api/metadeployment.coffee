@@ -21,5 +21,9 @@ module.exports = class MetaDeployment
 
   post: (callback) ->
     for app in @environment
-      deployment = new Deployment(app['name'], @ref, @task, app['environment'], @force, @hosts)
+      deployment           = new Deployment(app['name'], @ref, @task, app['environment'], @force, @hosts)
+      deployment.user      = this.user
+      deployment.room      = this.room
+      deployment.userName  = this.userName
+      deployment.robotName = this.robotName
       deployment.post(callback)
