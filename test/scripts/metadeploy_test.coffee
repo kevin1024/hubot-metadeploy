@@ -21,7 +21,7 @@ describe 'deploying from chat', ->
   beforeEach ->
     calls = []
     postCalled = false
-    mockrequire('hubot-deploy/src/github/api/deployment', {Deployment: FakeDeployment})
+    mockrequire('@realgeeks/hubot-deploy/src/github/api/deployment', {Deployment: FakeDeployment})
     @room = helper.createRoom()
 
   afterEach ->

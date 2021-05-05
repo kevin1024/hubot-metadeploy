@@ -13,7 +13,7 @@
     "posttest": "NODE_ENV=test coffeelint -f .coffeelint.json src/"
   },
   "dependencies": {
-    "hubot-deploy": "^0.13.25"
+    "@realgeeks/hubot-deploy": "^0.13.28"
   },
   "devDependencies": {
     "chai": "^3.5.0",

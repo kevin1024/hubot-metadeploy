@@ -5,7 +5,7 @@
 #   hubot metadeploy <app-group>
 
 MetaDeployment = require "../api/metadeployment"
-Verifiers     = require('hubot-deploy/src/models/verifiers')
+Verifiers     = require('@realgeeks/hubot-deploy/src/models/verifiers')
 
 scriptPrefix = process.env['HUBOT_METADEPLOY_PREFIX'] || 'mdeploy'
 

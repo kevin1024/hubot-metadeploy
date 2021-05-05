@@ -1,7 +1,7 @@
 Fs                 = require "fs"
 Path               = require "path"
-Deployment         = require("hubot-deploy/src/github/api/deployment").Deployment
-DeployPattern      = require("hubot-deploy/src/models/patterns").DeployPattern
+Deployment         = require("@realgeeks/hubot-deploy/src/github/api/deployment").Deployment
+DeployPattern      = require("@realgeeks/hubot-deploy/src/models/patterns").DeployPattern
 
 module.exports = class MetaDeployment
   @META_FILE = process.env['HUBOT_METADEPLOY_APPS_JSON'] or 'meta.json'
