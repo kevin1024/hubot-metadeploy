@@ -1,4 +1,4 @@
 Path  = require 'path'
 
 module.exports = (robot, scripts) ->
-  robot.loadFile(Path.resolve(__dirname, "src", "scripts"), "metadeploy.coffee")
+  robot.loadFile(Path.resolve(__dirname, "src", "scripts"), "metadeploy.js")

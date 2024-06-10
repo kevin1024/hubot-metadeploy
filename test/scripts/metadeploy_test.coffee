@@ -1,5 +1,5 @@
 Helper = require('hubot-test-helper')
-helper = new Helper('../../src/scripts/metadeploy.coffee')
+helper = new Helper('../../src/scripts/metadeploy.js')
 co     = require('co')
 expect = require('chai').expect
 mockrequire = require('mock-require')
